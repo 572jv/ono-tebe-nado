@@ -52,7 +52,7 @@ a {
   line-height: normal;
   letter-spacing: 0.01em;
   text-underline-position: under;
-  word-spacing: 1.5px; 
+  word-spacing: 1.5px;
 }
 
 .header-logo {
@@ -64,7 +64,7 @@ a {
 }
 
 .header__logo-image {
-  display: block; 
+  display: block;
 }
 
 .header_address {
