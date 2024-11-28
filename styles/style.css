@@ -6,12 +6,16 @@
   padding: 0;
 
 }
-
+body {
+  width: 1100px;
+  margin: 0 auto;
+}
 .header {
   display: flex;
-  padding-top: 93px;
-  /* padding: 94px 50px 92px; */
+  
+  padding: 93px 50px 0;
   align-items: center;
+  margin-bottom: 93px;
 }
 
 .header__menu {
@@ -19,7 +23,7 @@
   font-size: 18px;
   line-height: 21px;
   list-style: circle;
-  /* width: 460px; */
+  
   height: 20px;
   word-spacing: 5em;
 }
@@ -28,7 +32,6 @@
   display: flex;
   gap: 30px;
   list-style: circle;
-  padding-left: 50px;
   padding-bottom: 10px;
 } 
 
@@ -75,7 +78,7 @@ a {
   
  }
 
-.address {
+.header_address {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
@@ -104,59 +107,64 @@ main {
   min-height: 757px;
   width: 100%;
   position: relative;
-  top: 10px;
+  padding: 164px 0 50px;
+  margin-bottom: 180px;
 
  }
 
 .cover__title {
   font-size: 100px;
   color: #fff;
-  margin-top: 81px;
+  /* margin-top: 81px; */
   position: relative;
   display: flex;
   flex-direction: column;
   z-index: 1;
   font-weight: 700;
   width: 100%;
-  top: 165px;
+  /* top: 165px; */
   text-align: start;
   height: 200px;
-  left: 50px;
+  /* left: 50px; */
   /* width: 500px; */
   /* word-spacing: px; */
  }
 
- .letter-spacing-extended {
-  position: relative;
-  right: 25px;
+ .aligned-text {
+  letter-spacing: 30px;
+  text-align: left;
+  margin-left: 50px;
  }
 
-.aligned-text {
-  letter-spacing: 30px;
-
+ .letter-spacing-extended {
+  position: relative;
+  right: 24px;
  }
 
 .aligned-text_center {
   letter-spacing: 30px;
   text-align: center;
   padding-top: 10px;
-  padding-right: 106px;
+  padding-right: 5px;
   width: 100%;
  }
  
  .aligned-text_right {
-  letter-spacing: 20px;
+  letter-spacing: 30px;
   text-align: end;
-  padding-right: 75px;
+  margin-right: -3px;
   padding-top: 3px;
  }
 
 .cover__description {
-  position: relative;
+  position: absolute;
+  align-items: center;
+  bottom: 50px;
+  left: 77px;
   display: flex;
-  justify-content:space-around;
-  gap: 48px;
-  top: 500px;
+  /* justify-content:end; */
+  gap: 77px;
+  /* top: 500px; */
   z-index: 1;
   /* left: 100px; */
  }
@@ -168,13 +176,12 @@ main {
   text-align: left;
   left: 24px;
   word-spacing: 19px;
-  position: relative;
-  bottom: 30px;
-
+  /* position: relative; */
+  /* bottom: 30px; */
  }
  
 .bet-button {
-  position: relative;
+  /* position: relative; */
   background: transparent;
   border: 1px solid #fff;
   color: #fff;
@@ -184,10 +191,11 @@ main {
   text-transform: uppercase;
   font-weight: 500;
   z-index: 1;
-  bottom: 44px;
-  right: 11px;
-  word-spacing: 5px;
-  letter-spacing: 0.5px;
+  /* bottom: 44px; */
+  right: 0px;
+  /* word-spacing: 0px; */
+  /* letter-spacing: 0.5px; */
+  text-align: center;
 }
 
 .overlay {
@@ -200,20 +208,16 @@ main {
   /* inset: 0; */
 }
 
-.lots {
-padding-top: 152px;
-padding-left: 49px;
-width: 1100px;
-height: 692px;
-}
+.lots {/* padding-top: 152px;
+padding-left: 49px; */width: 1100px;height: 692px;padding: 0 24px;}
 
 .lots__heading {
   text-transform: uppercase;
   /* padding-bottom: 50px; */
-  padding-left: 15px;
+  padding-left: 40px;
   font-size: 40px;
   font-weight: 700;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 }
 
 .lots__card-list {
@@ -221,6 +225,7 @@ height: 692px;
   list-style: none;
   gap: 25px;
   padding-bottom: 57px;
+  /* padding-left: 3px; */
 }
 
 .lots__card-list-item {
@@ -230,7 +235,9 @@ height: 692px;
   display: block;
   position: relative;
   top: 27px;
-  right: 25px;
+  /* right: 25px; */
+  background-size: cover;
+  background-position: center;
 
 }
 
@@ -252,32 +259,29 @@ height: 692px;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-transform: uppercase;
-  color: #fff; 
+  color: #fff;
   margin-top: 49px;
-  padding: 0 40px;
+  padding: 0 37px;
   z-index: 1;
-  word-spacing: 1.3px;
-  line-height: 1.33;
-  
+  line-height: 1.22;
+  word-spacing: -1.7px
   /* text-underline-offset: 1px */
 
 line-height: 26.4px;
-text-align: left;
-text-decoration-line: underline;
-text-decoration-style: solid;
-
+  /* text-align: left; */
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 
 .card__text {
   z-index: 1;
   font-weight: 400;
-  margin-bottom: 50px ;
+  margin-bottom: 50px;
   color: #fff;
-  padding: 0 40px;
-  line-height: 1.33;
-  letter-spacing: 1.05px;
+  padding: 0px 36px;
+  line-height: 1.2;
+  /* letter-spacing: -0.7px; */
   font-size: 20px;
-
 }
 
 .card-link {
@@ -299,9 +303,10 @@ justify-content: space-between;
 .lots__look-more-link {
   text-decoration:underline;
   font-size:20px;
-  padding-left: 13px;
-  text-underline-offset: 1px;
+  padding-left: 40px;
+  /* text-underline-offset: 0px; */
   text-decoration-thickness: 1px;
+  letter-spacing: -0.1px;
 }
 
 .overlay {
@@ -316,8 +321,7 @@ justify-content: space-between;
 .about {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  padding: 372px 5px 154px 71px ;
-  
+  padding: 180px 15px 154px 71px;
 }
 
 
@@ -354,26 +358,25 @@ color: #000;
 .about__text {
  font-size: 20px;
  font-weight: 400;
- padding-bottom: 21px;
+ margin-top: -1px;
+ padding-bottom: 27px;
  color: #000;
- margin-left: -24px ;
-letter-spacing: 0.01em;
-line-height: 24px;
-padding-left: 96px;
-/* word-spacing: 1; */
-
+ margin-left: -24px;
+ letter-spacing: 0.18px;
+ /* line-height: 24px; */
+ padding-left: 96px;
+ /* word-spacing: 1; */
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  /* padding: 0 50px 90px; */
+  padding: 2px 50px 90px;
   width: 100%;
-  padding-left: 50px;
 }
 
-.address {
+.footer_address {
   font-style: normal;
   font-size: 18px;
   /* line-height: 20px; */
@@ -384,6 +387,7 @@ padding-left: 96px;
 }
 .footer__menu {
   text-align: center;
+  padding-left: 37px;
 }
 
 .footer__menu-list {
