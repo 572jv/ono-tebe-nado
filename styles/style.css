@@ -53,6 +53,7 @@ a {
   letter-spacing: 0.01em;
   text-underline-position: under;
   word-spacing: 1.5px; 
+
 }
 
 .header-logo {
@@ -62,6 +63,7 @@ a {
   margin-right: 191px;
   margin-left: 41px;
   word-spacing: 2px; 
+
 }
 
 .header__logo-image {
@@ -178,7 +180,9 @@ main {
   height: 100%;
   opacity: 0.6;
   background-color: #000;
+  inset: 0;
 }
+
 
 .lots {
 width: 1100px;
