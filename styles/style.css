@@ -136,7 +136,6 @@ main {
 }
 
 .bet-button {
-  right: 0px;
   z-index: 1;
   width: 256px;
   min-height: 51px;
