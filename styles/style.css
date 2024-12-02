@@ -186,7 +186,7 @@ main {
   flex-grow: 1;
   width: 334px;
   min-height: 563px;
-  margin-top: 26px; 
+  margin-top: 26px;
 }
 
 .card_type_film {
@@ -208,7 +208,8 @@ main {
   background-image: url("../images/card-lot-03.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;}
+  background-size: cover;
+}
 
 .card__title {
   z-index: 1;
